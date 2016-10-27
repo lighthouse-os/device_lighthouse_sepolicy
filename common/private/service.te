@@ -14,3 +14,4 @@ type dc_dimming_service, system_api_service, system_server_service, service_mana
 # Applock
 type applock_service, system_api_service, system_server_service, service_manager_type;
 
+type pocket_service, system_api_service, system_server_service, service_manager_type;
