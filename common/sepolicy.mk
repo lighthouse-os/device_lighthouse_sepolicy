@@ -16,20 +16,20 @@ endif
 endif
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/canned/sepolicy/common/public
+    device/lighthouse/sepolicy/common/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/canned/sepolicy/common/private
+    device/lighthouse/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/canned/sepolicy/common/dynamic \
-    device/canned/sepolicy/common/system
+    device/lighthouse/sepolicy/common/dynamic \
+    device/lighthouse/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/canned/sepolicy/common/dynamic \
-    device/canned/sepolicy/common/vendor
+    device/lighthouse/sepolicy/common/dynamic \
+    device/lighthouse/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/canned/sepolicy/legacy-common/sepolicy.mk
+-include device/lighthouse/sepolicy/legacy-common/sepolicy.mk
