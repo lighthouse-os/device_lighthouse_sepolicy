@@ -27,3 +27,8 @@ endif
 
 # Selectively include legacy rules defined by the products
 -include device/lighthouse/sepolicy/legacy-common/sepolicy.mk
+
+# Include atv rules on atv product
+ifeq ($(PRODUCT_IS_ATV), true)
+include device/lighthouse/sepolicy/atv/sepolicy.mk
+endif
