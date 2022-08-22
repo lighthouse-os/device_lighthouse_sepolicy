@@ -1,1 +1,1 @@
-user=_app isPrivApp=true seinfo=platform name=org.evolution.ota domain=updater_app type=app_data_file levelFrom=user
+user=_app isPrivApp=true seinfo=platform name=com.lighthouse.ota domain=updater_app type=app_data_file levelFrom=user
